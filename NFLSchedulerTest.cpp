@@ -7,12 +7,19 @@
 
 #include "NFLScheduler.h"
 #include "SportsGameScheduleBuilder.h"
+#include "GameSchedule.h"
 
 int main()
 {
-	NFLScheduler scheduler(new SportsGameScheduleBuilder());
+	SportsGameScheduleBuilder * gameScheduleBuilder = new SportsGameScheduleBuilder();
+
+	NFLScheduler scheduler(gameScheduleBuilder);
 
 	scheduler.ConstructSchedule();
+
+	GameSchedule * schedule = gameScheduleBuilder->GetSchedule();
+
+    schedule->Display();
 
 	return 0;
 }

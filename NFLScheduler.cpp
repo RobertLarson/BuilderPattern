@@ -125,8 +125,4 @@ void NFLScheduler::ConstructSchedule() {
 	m_gameScheduleBuilder->AddTime(dateNumber, gameNumber, std::string("10:20pm"));
 	m_gameScheduleBuilder->AddHomeTeam(dateNumber, gameNumber, std::string("Denver Broncos"));
 	m_gameScheduleBuilder->AddAwayTeam(dateNumber, gameNumber, std::string("San Diego Chargers"));
-
-	GameSchedule * schedule = m_gameScheduleBuilder->GetSchedule();
-
-	schedule->Display();
 }

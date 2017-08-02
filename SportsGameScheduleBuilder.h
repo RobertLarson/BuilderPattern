@@ -24,7 +24,7 @@ public:
 	virtual void AddHomeTeam(unsigned int dateNumber, unsigned int gameNumber, std::string name);
 	virtual void AddAwayTeam(unsigned int dateNumber, unsigned int gameNumber, std::string name);
 
-	virtual GameSchedule * GetSchedule();
+    GameSchedule * GetSchedule();
 
 private:
 	SportsGameSchedule * m_gameSchedule;

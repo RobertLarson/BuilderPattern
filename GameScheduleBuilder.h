@@ -21,8 +21,6 @@ public:
 	virtual void AddTime(unsigned int dateNumber, unsigned int gameNumber, std::string time) = 0;
 	virtual void AddHomeTeam(unsigned int dateNumber, unsigned int gameNumber, std::string name) = 0;
 	virtual void AddAwayTeam(unsigned int dateNumber, unsigned int gameNumber, std::string name) = 0;
-
-	virtual GameSchedule * GetSchedule() = 0;
 };
 
 
